@@ -1,0 +1,35 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+body {
+  @apply bg-gray-800 overflow-x-hidden;
+}
+.form-container {
+  background: url('./assets/bg-weather.avif') no-repeat 50% 40% / cover;
+  height: auto;
+  border-radius: inherit;
+}
+
+.alert-notice::after {
+  content: '';
+  width: 8px;
+  height: 8px;
+  margin-left: 2px;
+  margin-top: -3px;
+  @apply animate-ping bg-blue-800 absolute rounded-full;
+}
+h1 {
+  font-weight: bold;
+}
+.btn-slice {
+  box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px,
+    rgba(60, 64, 67, 0.15) 0px 2px 6px 2px;
+  @apply rounded-full bg-white absolute top-1/2 -translate-y-1/2 justify-center items-center flex p-2 z-50 opacity-70 text-gray-600;
+}
+.btn-next {
+  right: -1rem;
+}
+.btn-prev {
+  left: -1rem;
+}
